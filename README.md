@@ -31,6 +31,8 @@ Clicking the anchors would make the site jump to the correct section. This is th
 
 Scroll_to.js will allow you to scroll to any element. By default the href attribute is used to determine the scroll anchor, but you can override this.
 
+## Usage
+
 Let's convert all internal anchors to scroll_to anchors.
 
 First import:
@@ -51,3 +53,9 @@ This will apply scroll_to to every internal anchor, but not to anchors in which 
 will be hooked up, but not
 
     <a href="#">Some other link</a>
+
+## Scrolling elsewhere
+
+If you'd like to choose where to scroll to, you can do this too. Just set a data-scroll-to attribute, so we might have:
+
+<h1 data-scroll-to="#top">My Site</h1>
